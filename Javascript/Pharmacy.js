@@ -162,7 +162,7 @@ clearCartButton.addEventListener("click", () => {
 checkoutButton.addEventListener("click", () => {
     if (cart.length > 0) {
         const cartQuery = encodeURIComponent(JSON.stringify(cart));
-        window.location.href = `checkout.html?cart=${cartQuery}`;
+        window.location.href = `Checkout.html?cart=${cartQuery}`;
     } else {
         alert("Your cart is empty!");
     }
@@ -172,7 +172,7 @@ checkoutButton.addEventListener("click", () => {
 buyNowButton.addEventListener("click", () => {
     if (cart.length > 0) {
         const cartQuery = encodeURIComponent(JSON.stringify(cart));
-        window.location.href = `checkout.html?cart=${cartQuery}`;
+        window.location.href = `Checkout.html?cart=${cartQuery}`;
     } else {
         alert("Your cart is empty!");
     }
