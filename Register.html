@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <link href="./CSS/Register.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <!--set logo-->
+    <div class="logo-container" style="height: 60px;">
+        <div><img src="Assets\logo (7).png" alt="Logo" style="width: 100px;"></div>
+        <div class="contact">
+            <div><a href="#">No.18, Perera Road, Colombo 05</a></div>
+            <div><a href="#">0712869578</a></div>
+        </div>
+
+    </div>
+
+    <!--create navigation bar-->
+    <div class="nav-container">
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Doctors.html">Doctors</a>
+            <a href="Pharmacy.html">Pharmacy</a>
+            <a href="Appointment.html">Make an Appointment</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+
+        <!--directs to appointment page when click on button-->
+        <a href="Appointment.html" class="appointment-button-nav">Book an Appointment</a>
+    </div>
+
+
+    <!--set logo-->
+    <img src="Assets/logo (7).png" alt="MediHelp Logo" class="logo">
+
+<section>
+
+ <!--create form to register-->   
+<div class="form-container">
+    <form>
+
+        <h1 class="form-heading">Register</h1>                           <!--form heading-->
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="email" placeholder="Email Address" required>
+        <select required>
+            <option value="" disabled selected>Select Gender</option>         <!--dropdown to select the gender-->
+            <option value="sex1">Male</option>
+            <option value="sex2">Female</option>
+        </select>
+       
+        <button type="submit">Sign Up</button>                               <!--create submit button-->
+    </form>
+</div>
+</section>
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <!-- Left Side: Services -->
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="Appointment.html">Channeling Service</a></li>
+                    <li><a href="Pharmacy.html">Pharmacy</a></li>
+                </ul>
+            </div>
+    
+            <!-- Right Side: Inquiry Section -->
+            <div class="footer-inquiry">
+                <h3>Inquiries</h3>
+                <p><strong>Contact:</strong> 0712869578</p>
+                <p><strong>Email:</strong> medihelp@gmail.com</p>
+                <p><strong>Address:</strong> No.18, Perera Road, Colombo 05</p>
+            </div>
+        </div>
+
+    
+    </footer>
+    
+
+</body>
+
+</html>

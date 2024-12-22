@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="CSS/Checkout.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Checkout</h1>
+      <a href="Pharmacy.html">Back to Pharmacy</a>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Cart Section -->
+      <section id="cart-section">
+        <h2>Your Cart</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Medicine</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="cart-body">
+            <!-- Cart items will be dynamically inserted here -->
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3"><strong>Grand Total</strong></td>
+              <td id="cart-total">$0.00</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <!-- Billing Section -->
+      <section id="billing-section">
+        <h2>Billing Details</h2>
+        <form id="billing-form">
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Name"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email"
+            required
+          />
+
+          <label for="address">Address</label>
+          <textarea
+            id="address"
+            name="address"
+            placeholder="Your Address"
+            required
+          ></textarea>
+
+          <button type="submit" id="place-order">Place Order</button>
+        </form>
+      </section>
+
+      <!-- Confirmation Section -->
+      <section id="confirmation-section" class="hidden">
+        <h2>Thank You for Your Order!</h2>
+        <p>
+          Your order has been successfully placed. We will process it shortly.
+        </p>
+        <a href="Pharmacy.html">Back to Pharmacy</a>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Pharmacy Checkout</p>
+    </footer>
+
+    <script src="Javascript/Checkout.js"></script>
+  </body>
+</html>

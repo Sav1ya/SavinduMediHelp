@@ -1,0 +1,344 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    /* Create Flexbox */
+    justify-content: left;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.appointment-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* Change cursor to a pointer when hovering on the button */
+    margin-left: 320px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.logo-container img {
+    margin-right: auto;
+}
+
+.contact {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .contact {
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo img {
+        width: 90px;
+    }
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(156, 237, 247);
+    color: white;
+    padding: 10px 0;
+}
+
+.nav-container .nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-container .appointment-button-nav {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 500px;
+}
+
+/* Main Section */
+.main-container {
+    background-image: url('../Assets/caregiver-using-stethoscope-old-man.jpg');
+    /*set background image*/
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    padding-left: 250px;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    position: relative;
+    /* Positions the element relative to its normal position*/
+}
+
+.main-container-text {
+    max-width: 600px;
+}
+
+.main-container-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.main-container-text .description {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Media Queries for Main Section */
+@media (max-width: 768px) {
+    .main-container {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .main-container-text {
+        padding: 20px;
+    }
+
+    .main-container-text h2 {
+        font-size: 24px;
+    }
+
+    .main-container-text .description {
+        font-size: 16px;
+    }
+}
+
+/* Services Section */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.service-heading {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 8px;
+    margin: 10px;
+    width: calc(48% - 20px);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service img {
+    max-width: 150px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.service .description {
+    flex: 1;
+}
+
+.service .description h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service .description p {
+    font-size: 16px;
+}
+
+/* Media Queries for Services Section */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .service {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .service img {
+        margin-bottom: 20px;
+    }
+}
+
+/* Register Section */
+.register {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.register h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.register .register-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .register h1 {
+        font-size: 20px;
+    }
+
+    .register .register-button {
+        font-size: 14px;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-left {
+    width: 300px;
+    margin-left: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-services h3,
+.footer-inquiry h3 {
+    margin-bottom: 10px;
+
+}
+
+.footer-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-services ul li {
+    margin: 5px 0;
+}
+
+.footer-services ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-services ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-inquiry p {
+    margin: 8px 0;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-services,
+    .footer-inquiry {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .footer-left {
+        margin-bottom: 20px;
+    }
+
+    .footer-services ul li {
+        text-align: center;
+    }
+
+    .footer-inquiry p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 10px;
+    }
+
+    .footer-left,
+    .footer-services,
+    .footer-inquiry {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}

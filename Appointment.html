@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframe Layout</title>
+    <link href="./CSS/Appointment.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <header>
+
+    </header>
+
+    <!--set logo-->
+    <div class="logo-container" style="height: 60px;">
+        <div><img src="Assets\logo (7).png" alt="Logo" style="width: 100px;"></div>
+        <div class="contact">
+            <div><a href="#">No.18, Perera Road, Colombo 05</a></div>
+            <div><a href="#">0712869578</a></div>
+        </div>
+
+    </div>
+
+    <!--create navigation bar-->
+    <div class="nav-container">
+        <div class="nav-items">
+            <!--link relevant pages to the items of navigation bar-->
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Doctors.html">Doctors</a>
+            <a href="Pharmacy.html">Pharmacy</a>
+            <a href="Appointment.html">Make an Appointment</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+
+        <a href="Appointment.html" class="appointment-button-nav">Book an Appointment</a>   <!--appointment button creation and link to appoointment page-->
+    </div>
+
+
+    <img src="Assets/logo (7).png" alt="MediHelp Logo" class="logo">       <!--Set logo-->
+
+<section>
+<div class="form-container">
+    
+    <!--Create form-->
+    <form>
+
+        <h1 class="form-heading">Make an Appointment</h1>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <select required>
+            <!--dropdown list to select appointment date-->
+            <option value="" disabled selected>Select Appointment Date</option>
+            <option value="date1">18th September 2024</option>
+            <option value="date2">19th September 2024</option>
+            <option value="date3">20th September 2024</option>
+        </select>
+        <select required>
+            <!--dropdown list to select appointment time-->
+            <option value="" disabled selected>Select Appointment Time</option>
+            <option value="time1">10.00 a.m</option>
+            <option value="time2">11.00 a.m</option>
+            <option value="time3">12.00 a.m</option>
+        </select>
+        <!--create a row to add notes-->
+        <textarea placeholder="Notes" rows="4"></textarea>
+        <button type="submit">Make an Appointment</button>     <!--create submit button-->
+    </form>
+</div>
+</section>
+
+
+
+
+    <footer>
+        <div class="footer-container">
+            <!-- Left Side: Services -->
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="Appointment.html">Channeling Service</a></li>
+                    <li><a href="Pharmacy.html">Pharmacy</a></li>
+                </ul>
+            </div>
+    
+            <!-- Right Side: Inquiry Section -->
+            <div class="footer-inquiry">
+                <h3>Inquiries</h3>
+                <p><strong>Contact:</strong> 0712869578</p>
+                <p><strong>Email:</strong> medihelp@gmail.com</p>
+                <p><strong>Address:</strong> No.18, Perera Road, Colombo 05</p>
+            </div>
+        </div>
+
+    
+    </footer>
+    
+
+</body>
+
+</html>

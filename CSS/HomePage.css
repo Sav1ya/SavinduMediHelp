@@ -1,0 +1,340 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    width: 100%;
+}
+
+header {}
+
+header img {
+    height: 50px;
+
+}
+
+.container {
+    display: flex;
+    /* Create Flexbox */
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+.appointment-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    /* Add padding around the appointment button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.logo-container img {
+    margin-right: auto;
+}
+
+.contact {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    flex-direction: row; 
+    gap: 30px;
+    align-items: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .contact {
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo img {
+        width: 90px;
+    }
+}
+
+.nav-container {
+    display: flex;
+    /* Add Flexbox */
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(156, 237, 247);
+    color: white;
+    padding: 10px 0;
+    flex-wrap: wrap;
+}
+
+.nav-container .nav-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* Adjust gaps in between nav items */
+}
+
+.nav-container .appointment-button-nav {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 500px;
+}
+
+.Channel {
+    background-color: rgba(173, 216, 230, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+.main-container {
+    background-image: url('../Assets/background\ main.jpg');
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #d9d9d9;
+    position: relative;
+    height: 500px;
+}
+
+.main-container-text {
+    position: absolute;
+    top: 7;
+    right: 0;
+    width: 500px;
+    padding: 100px;
+    text-align: right;
+}
+
+/* For responsiveness on smaller devices */
+@media (max-width: 768px) {
+    .main-container-text {
+        position: static;
+        width: 100%;
+        text-align: left;
+        padding: 10px;
+        margin-top: 20px;
+    }
+}
+
+.main-container-text .section-title {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.main-container-text .description {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 55px;
+}
+
+.description {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+
+}
+
+.doctor-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Styling for individual doctor cards */
+.doctor-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    height: 100%;
+}
+
+.doctor-card img {
+    width: 150px; 
+    height: 150px; 
+    margin: 0 auto 15px auto;
+}
+
+.doctor-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.doctor-card .description {
+    font-size: 1em;
+    color: #666;
+    min-height: 80px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .doctor-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .doctor-card {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .doctor-card {
+        max-width: 45%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .doctor-card {
+        max-width: 22%;
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-left {
+    width: 300px;
+    margin-left: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-services h3,
+.footer-inquiry h3 {
+    margin-bottom: 10px;
+
+}
+
+.footer-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-services ul li {
+    margin: 5px 0;
+}
+
+.footer-services ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-services ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-inquiry p {
+    margin: 8px 0;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-services,
+    .footer-inquiry {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .footer-left {
+        margin-bottom: 20px;
+    }
+
+    .footer-services ul li {
+        text-align: center;
+    }
+
+    .footer-inquiry p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 10px;
+    }
+
+    .footer-left,
+    .footer-services,
+    .footer-inquiry {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}

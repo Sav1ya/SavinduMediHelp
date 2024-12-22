@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy</title>
+    <link href="CSS/Pharmacy.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <!-- Header content if needed -->
+    </header>
+
+    <!-- Logo and Contact Information -->
+    <div class="logo-container" style="height: 60px;">
+        <div><img src="Assets/logo (7).png" alt="Logo" style="width: 100px;"></div>
+        <div class="contact">
+            <div><a href="#">No.18, Perera Road, Colombo 05</a></div>
+            <div><a href="#">0712869578</a></div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <div class="nav-container">
+        <div class="nav-items">
+            <a href="index.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="Services.html">Services</a>
+            <a href="Doctors.html">Doctors</a>
+            <a href="Pharmacy.html">Pharmacy</a>
+            <a href="Appointment.html">Make an Appointment</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+        <a href="Appointment.html" class="appointment-button-nav">Book an Appointment</a>
+    </div>
+
+    <!-- Medicine Container -->
+    <div id="medicine-container">
+        <!-- Medicines will be dynamically add to the cart-->
+    </div>
+
+    <!-- Cart Section -->
+    <div class="cart-section">
+        <h2>Your Cart</h2>
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Medicine</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="cart-body">
+                <!-- Dynamic content will be inserted here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td id="cart-total">$0</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="cart-actions">
+            <button id="clear-cart" class="cart-button">Clear Cart</button>
+            <button id="checkout" class="cart-button">Checkout</button>
+            <button id="buy-now" class="cart-button">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Favorites Section -->
+    <div class="favorites-section">
+        <button id="save-favorites">Save to Favorites</button>
+        <button id="load-favorites">Load Favorites</button>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <!-- Left Side: Services -->
+            <div class="footer-services">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="Appointment.html">Channeling Service</a></li>
+                    <li><a href="Pharmacy.html">Pharmacy</a></li>
+                </ul>
+            </div>
+
+            <!-- Right Side: Inquiry Section -->
+            <div class="footer-inquiry">
+                <h3>Inquiries</h3>
+                <p><strong>Contact:</strong> 0712869578</p>
+                <p><strong>Email:</strong> medihelp@gmail.com</p>
+                <p><strong>Address:</strong> No.18, Perera Road, Colombo 05</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Javascript/Pharmacy.js"></script>
+</body>
+
+</html>

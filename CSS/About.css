@@ -1,0 +1,357 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+header {
+
+}
+header img {
+    height: 50px;
+    
+}
+
+.container {
+    display: flex;                              /* Create Flexbox */
+    justify-content: left;
+    align-items: center;
+    height: 15vh; 
+    margin-left: 0px;
+}
+
+.appointment-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;                          /* Change cursor to a pointer when hovering on the button */
+    margin-left: 320px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+
+.logo-container img {
+    margin-right: auto;
+}
+
+.contact {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); 
+    display: flex;
+    flex-direction: row; 
+    gap: 30px;
+    align-items: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .logo-container {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .contact {
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .logo img {
+        width: 90px;
+    }
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(156, 237, 247);
+    color: white;
+    padding: 10px 0;
+}
+.nav-container .nav-items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.nav-container .appointment-button-nav {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 500px;
+}
+
+.Channel {
+    background-color: rgba(173, 216, 230, 0.5);
+    padding: 20px;
+    text-align: left;
+    padding: 50px;
+}
+.main-container {
+    background-image: url('../Assets/about\ b.jpg');          /* Set background image */
+    background-size: cover;                                   /* Set the background image to the whole selected area */                                                             
+    justify-content: center; 
+    align-items: center;
+    padding-left: 250px;
+    background-color: #d9d9d9;
+    display: flex;
+    align-items: flex-end;                                    /* Aligns items to the bottom of the cross axis vertically */
+    justify-content: flex-start;                             /* Aligns items to the start left of the main axis horizontally */
+    position: relative;                                       /* Positions the element relative to its normal position, allowing for further positioning with top, right, bottom, or left */
+    
+}
+
+.main-container-text .section-title {
+    text-align: justify; 
+    line-height: 1.6;
+    margin-left: 500px;
+    margin-top: 0px;
+    padding-top: 5px;
+    margin: 0;
+    display: flex;
+    padding-bottom: 150px;
+    font-size: 24px;
+    
+    
+}
+
+.main-container-text .description {
+    text-align: justify; 
+    line-height: 1.6;                               /* Keep space between lines */
+    margin-left: 100px;
+    margin-top: 200px;
+    padding-top: 5px;
+    margin: 0;
+    
+
+}
+
+.about-section {
+    padding: 50px;
+    background-color: white;
+}
+.about-image {
+    width: 35%;
+    float: right;                                   /* Float the element to the right. allowing other elements to wrap around it on the left */
+    margin-left: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;                           /* Rounds the corners of the element */
+}
+
+.text{
+    text-align: justify;
+}
+
+.section-title {
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 55px;
+    margin-left: 320px;
+    
+            
+    
+}
+.description {
+    text-align: left;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    display: flex;
+            
+}
+
+.image-container {
+    flex-shrink: 0;                  /* Allows the flex item to shrink if necessary, with a value of 0 indicating it can shrink to fit the container */
+    max-width: 200px;
+}
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #00796b;
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #b2dfdb;
+}
+
+/* Media Query for small screens */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Stack table rows and cells for mobile view */
+    table, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    /* Hide table headers for mobile */
+    thead {
+        display: none;
+    }
+
+    /* Make each table row a block element */
+    tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #00796b;
+        padding-bottom: 10px;
+    }
+
+    /* Format cells for mobile */
+    td {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        text-align: right;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    /* Add pseudo-elements to display header labels on mobile */
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: calc(50% - 20px);
+        text-align: left;
+        font-weight: bold;
+    }
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-left {
+    width: 300px;
+    margin-left: 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-services h3,
+.footer-inquiry h3 {
+    margin-bottom: 10px;
+
+}
+
+.footer-services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-services ul li {
+    margin: 5px 0;
+}
+
+.footer-services ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-services ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-inquiry p {
+    margin: 8px 0;
+}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-services,
+    .footer-inquiry {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .footer-left {
+        margin-bottom: 20px;
+    }
+
+    .footer-services ul li {
+        text-align: center;
+    }
+
+    .footer-inquiry p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-container {
+        padding: 10px;
+    }
+
+    .footer-left,
+    .footer-services,
+    .footer-inquiry {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
